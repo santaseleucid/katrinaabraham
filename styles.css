@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 100px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    color: black;
+}
+
+.next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 100px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color: black;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.name-heading {
+    font-family: 'Just Me Again Down Here';
+    font-size: 128px;
+}
+
+.fun-font {
+    font-family: 'Just Me Again Down Here';
+    font-size: 48px
+}
+
+.caption-text {
+    font-family: 'Just Me Again Down Here';
+
+}
+
+.caption-text-2 {
+    font-family: 'Lato';
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.tabs.is-centered a {
+    text-decoration: none;
+}
+
+.line-text hr {
+    flex-grow: 1;
+    border: none;
+    background-color: black;
+    height: 1px;
+}
+
+.line-text span {
+    padding: 0 10px;
+}
+
+.navbutton {
+    background-color: #bbb;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.6s ease;
+    transition: color 0.6s ease;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navbutton:hover {
+    background-color: #555;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 500px) {
+    .fun-font {
+        font-size: 32px;
+        /* Adjust as needed */
+    }
+
+    .name-heading {
+        font-size: 64px;
+        /* Adjust as needed */
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
