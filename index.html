@@ -13,6 +13,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
+
+		<script src="script.js"></script>
 </head>
 
 
@@ -24,9 +26,10 @@
 	</div>
 
 	<div style="display:flex; justify-content: center; align-items: center;">
-		<div class="navbutton">Immersive Worlds</div>
+		<div onclick="scrollToTarget('immersive-worlds')" class="navbutton">Immersive Worlds</div>
 		<div class="navbutton">Story Books</div>
-		<div class="navbutton">Character Design</div>
+		<div class="navbutton">Sherlock & Watson</div>
+		<div class="navbutton">Characters of Cony Forest</div>
 		<div class="navbutton">About Me</div>
 	</div>
 
@@ -34,7 +37,7 @@
 	<div class="yoo" style="margin:0 auto; ">
 		<!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-		<div class="line-text fun-font">
+		<div id="immersive-worlds" class="line-text fun-font">
 			<hr>
 			<span>Immersive, Magical, Detailed</span>
 			<hr>
@@ -145,9 +148,9 @@
 		<div class="line-text fun-font">
 			<hr>
 		</div>
-		<div class="columns" style="display:flex; justify-content:center; ">
-			<div class="column is-one-half" style="display: flex; justify-content: center;">
-				<img src="./assets/face.png">
+		<div class="columns image-container" style="display:flex; justify-content:center; ">
+			<div class="column is-one-half" style="display: flex; justify-content: center; align-items: center;">
+				<img style="width: 80%; height: auto;" class="left-tiled" src="./assets/face.png">
 			</div>
 			<div class="column is-one-half" style="display: flex; justify-content: center;">
 				<div>
@@ -170,7 +173,6 @@
 		<p>&copy; 2024 My Portfolio. All rights reserved.</p>
 	</footer>
 
-	<script src="script.js"></script>
 
 </body>
 
