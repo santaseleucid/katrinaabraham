@@ -1,5 +1,6 @@
-function scrollToTarget(target) {
-    console.log(target);
-    const target = document.getElementById(target);
+console.log('Hello, World!');
+function scrollToTarget(targetId) {
+    console.log(targetId);
+    const target = document.getElementById(targetId);
     target.scrollIntoView({ behavior: 'smooth' });
 }
