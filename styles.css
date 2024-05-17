@@ -96,6 +96,10 @@
     max-width: 100%;  
     padding-top:2.5% 
 }
+.navbuttons{
+    display:flex;
+}
+
 @media screen and (min-width: 1500px) {
     .yoo {
         max-width: 950px;
@@ -130,4 +134,7 @@
         padding-left: 0%;
     }
 
+    .navbuttons{
+        display:none;
+    }
 }
