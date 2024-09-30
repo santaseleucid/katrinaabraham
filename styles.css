@@ -37,6 +37,34 @@
     color: black;
 }
 
+.sub-heading {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: black;
+    padding-left: 5%;
+    margin-top: 5%;
+    border-radius: 30px;
+    font-size: 48px;
+    font-family: 'Just Me Again Down Here';
+}
+
+.sub-heading-write-up {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: black;
+    border: 2px solid #ffb3ba;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-family: 'Lato';
+}
+
+
 .tabs.is-centered a {
     text-decoration: none;
 }
@@ -93,11 +121,12 @@
 }
 
 .tile {
-    max-width: 100%;  
-    padding-top:2.5% 
+    max-width: 100%;
+    padding-top: 2.5%
 }
-.navbuttons{
-    display:flex;
+
+.navbuttons {
+    display: flex;
 }
 
 @media screen and (min-width: 1500px) {
@@ -111,6 +140,7 @@
         font-size: 80px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .fun-font {
         font-size: 32px;
@@ -129,29 +159,33 @@
     .left-tiled {
         padding-right: 0%;
     }
-    
+
     .right-tiled {
         padding-left: 0%;
     }
 
-    .navbuttons{
-        display:none;
+    .navbuttons {
+        display: none;
     }
 }
+
 .main-container {
-    background-color: #f2f2f2; 
-    text-align: center; 
-    padding: 30px 30px 0px 30px; 
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
 }
+
 .body-style {
     max-width: 75%;
     margin: 0 auto;
 }
+
 @media screen and (max-width: 650px) {
     .body-style {
         max-width: 100%;
     }
-    .main-container{
+
+    .main-container {
         padding: 30px 5px 0px 5px;
     }
 }
