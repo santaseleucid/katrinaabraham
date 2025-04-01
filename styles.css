@@ -124,6 +124,7 @@
     padding-top: 2.5%
 }
 
+
 .navbuttons {
     display: flex;
 }
@@ -175,7 +176,7 @@
 }
 
 .body-style {
-    max-width: 75%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
