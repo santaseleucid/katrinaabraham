@@ -181,6 +181,9 @@
     max-width: 95%;
     margin: 0 auto;
 }
+.double-page{
+    max-width: 600px;
+}
 
 
 @media screen and (max-width: 700px) {
@@ -194,5 +197,14 @@
 
     .main-container {
         padding: 30px 5px 0px 5px;
+    }
+    .double-page{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .rounded-image{
+        width: 100%;
     }
 }
