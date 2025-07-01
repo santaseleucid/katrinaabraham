@@ -1,4 +1,5 @@
-assets/archive/
-assets/archive
-./assets/archive
-./assets/archive/
+# Virtual environment
+venv/
+
+# Archived images
+assets/archives/
