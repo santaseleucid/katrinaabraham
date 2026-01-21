@@ -36,28 +36,28 @@ window.addEventListener("load", function () {
   // page load time: wait until load event is finished with setTimeout
   setTimeout(function () {
 
-    var url = "https://script.google.com/macros/s/AKfycbztymiZjI8iTeWYt-_wYeZn8gcqcOq2nEFy26V9DDmGl5RoRAn_A2WETze11jJ7FR6UOQ/exec"; // Replace with your Web App URL
-
-    var jsonData = {
-      screen_width: screen_width,
-      screen_height: screen_height,
-      screen_available_width: screen_available_width,
-      screen_available_height: screen_available_height,
-      browser_type: browser_type,
-      language: language,
-      time_zone_offset: time_zone_offset,
-      page_load_time: page_load_time,
-      request_response_time: request_response_time,
-      render_time: render_time
-    };
-    fetch(url, {
-      method: 'POST',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
-      body: JSON.stringify(jsonData),
-      redirect: 'follow'
-    })
+    // var url = "https://script.google.com/macros/s/AKfycbztymiZjI8iTeWYt-_wYeZn8gcqcOq2nEFy26V9DDmGl5RoRAn_A2WETze11jJ7FR6UOQ/exec"; // Replace with your Web App URL
+    //
+    // var jsonData = {
+    //   screen_width: screen_width,
+    //   screen_height: screen_height,
+    //   screen_available_width: screen_available_width,
+    //   screen_available_height: screen_available_height,
+    //   browser_type: browser_type,
+    //   language: language,
+    //   time_zone_offset: time_zone_offset,
+    //   page_load_time: page_load_time,
+    //   request_response_time: request_response_time,
+    //   render_time: render_time
+    // };
+    // fetch(url, {
+    //   method: 'POST',
+    //   // headers: {
+    //   //   'Content-Type': 'application/json'
+    //   // },
+    //   body: JSON.stringify(jsonData),
+    //   redirect: 'follow'
+    // })
   }, 0);
 });
 
