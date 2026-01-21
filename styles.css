@@ -208,3 +208,73 @@
         width: 100%;
     }
 }
+
+/* ============ PORTFOLIO SECTION STYLES ============ */
+
+/* Portfolio section container */
+.portfolio-section {
+    max-width: 1220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+/* Portfolio image sizes */
+.portfolio-img-sm {
+    max-width: 225px;
+    border-radius: 15px;
+}
+
+.portfolio-img-md {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.portfolio-img-lg {
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.portfolio-img-xl {
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+.portfolio-img-xxl {
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.portfolio-img-full {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Cover image (left side) */
+.portfolio-cover {
+    max-width: 300px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Main container centering */
+.main-container-flex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
