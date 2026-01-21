@@ -67,3 +67,46 @@ function scrollToTarget(targetId) {
   target.scrollIntoView({ behavior: "smooth" });
 }
 
+// ============ LIGHTBOX MODAL FUNCTIONALITY ============
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("lightbox-modal");
+  const modalImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  // Get all portfolio images
+  const portfolioImages = document.querySelectorAll(".portfolio-section img");
+
+  // Add click event to each portfolio image
+  portfolioImages.forEach(function (img) {
+    img.addEventListener("click", function (e) {
+      e.stopPropagation();
+      modal.classList.add("active");
+      modalImg.src = this.src;
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    });
+  });
+
+  // Close modal when clicking the X button
+  closeBtn.addEventListener("click", function () {
+    modal.classList.remove("active");
+    document.body.style.overflow = ""; // Re-enable scrolling
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("active")) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+});
+
