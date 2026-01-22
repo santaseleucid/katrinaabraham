@@ -201,6 +201,7 @@
     .double-page{
         width: 90%;
     }
+
 }
 
 @media screen and (max-width: 320px){
@@ -331,4 +332,33 @@
 .portfolio-section img:hover {
     transform: scale(1.02);
     opacity: 0.9;
+}
+
+/* ============ PORTFOLIO MOBILE STYLES ============ */
+@media screen and (max-width: 700px) {
+    .portfolio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-section > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portfolio-cover {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-img-sm,
+    .portfolio-img-md,
+    .portfolio-img-lg,
+    .portfolio-img-xl,
+    .portfolio-img-xxl {
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
 }
